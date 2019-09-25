@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"  
+    tools:context="com.onemanshow.wftic.WFMainActivity" >
+    
+	<TextView
+	    android:id="@+id/bannerTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="52dip"
+	    android:gravity="center"
+	    android:text="@string/title"
+	    android:textColor="#FF808EE2"
+	    android:textSize="32sp" 
+	    />
+
+<RelativeLayout
+    android:id="@+id/stat_cap_layout"
+    android:layout_below="@+id/bannerTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dip" >
+    
+    <TextView
+        android:id="@+id/this_dev_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dip"
+        android:text="Device"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#FFFFFFCC"
+        android:textSize="24sp" />
+    
+    <TextView
+        android:id="@+id/versus_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="VS"
+        android:textColor="#FFFFFFCC"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/that_dev_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="64dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dip"
+        android:hint="@string/OpponDev_hint"
+        android:maxLines="2"
+        android:ellipsize="end"
+		android:textColor="#FFFFFFCC"
+		android:textSize="24sp"
+		
+        />
+    
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/stat_layout"
+    android:layout_below="@+id/stat_cap_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dip" >
+    	<TextView
+        android:id="@+id/this_dev_score"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+      	android:layout_alignParentLeft="true"
+        android:paddingLeft="64dp"
+        android:layout_marginLeft="8dip"
+        android:text="0"
+        android:textColor="#FFFFFFCC"
+        android:textSize="24sp" />
+    	<ImageView
+   		android:id="@+id/imageTurn"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+    	android:src="@drawable/no_enter" />
+    	<TextView
+        android:id="@+id/that_dev_score"
+        android:layout_width="wrap_content"
+        android:layout_height="32dip"
+        android:layout_alignParentRight="true"
+        android:paddingRight="64dp"
+        android:layout_marginRight="8dip"
+        android:text="0"
+		android:textColor="#FFFFFFCC"
+		android:textSize="24sp"
+		
+        />
+ </RelativeLayout>
+
+	<com.onemanshow.wftic.ViewProtoWF
+
+		android:id="@+id/viewProtoWF"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/stat_layout"
+
+		/>
+
+    
+    
+</RelativeLayout>

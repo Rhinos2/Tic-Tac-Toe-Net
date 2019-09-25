@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".MainTicViewActivity" >
+<FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/TicView" >
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:color="#FFFFFFFF" >
+
+      <RadioButton
+          android:id="@+id/first"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingRight="20dip"
+          android:button="@drawable/button_radio"
+          android:text="@string/level_easy"
+          android:textColor="#FFFFFFFF"
+          android:onClick="onRadioButtonClicked"/>
+
+      <RadioButton
+          android:id="@+id/second"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingRight="20dip"
+          android:button="@drawable/button_radio"
+          android:text="@string/level_medium"
+          android:textColor="#FFFFFFFF"
+          android:onClick="onRadioButtonClicked" />
+
+      <RadioButton
+          android:id="@+id/third"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingRight="20dip"
+          android:button="@drawable/button_radio"
+          android:text="@string/level_hard"
+          android:textColor="#FFFFFFFF"
+          android:onClick="onRadioButtonClicked" />
+
+</RadioGroup> 
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+    
+<ImageView
+            android:id="@+id/imageTurnCap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/turn" /> 
+<ImageView
+            android:id="@+id/imageCrossNull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/cross"/>             
+		
+  </LinearLayout>  
+</FrameLayout>
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="96dip"
+        android:layout_height="24dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/TicView"
+        android:layout_marginLeft="4dp"
+        android:onClick="onCheckboxClicked"
+        android:button="@drawable/checkbox_selector"
+        />
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onHelp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/hp" />
+    
+
+   <com.example.myticview.CustomTicView
+       
+        android:id="@+id/TicView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:fillColor="#FFFFFF99"
+        custom:borderColor="#FFCCCCFF"
+        custom:gridColor="#FF000000" 
+        custom:crossColor="#FF008000"
+        custom:nullColor="#FF0066CC"
+        custom:winColor="#FFFF0000"
+         />
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="40dip"
+       android:orientation="horizontal"
+       android:layout_toRightOf="@+id/TicView" 
+       android:layout_above="@+id/linear_null_wins" >
+
+    <ImageView
+        android:id="@+id/image_cross_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:src="@drawable/cross_wins" />
+
+    <TextView
+        android:id="@+id/cross_wins"
+        android:layout_width="32dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FF993300"
+        android:textSize="24sp" />
+  
+</LinearLayout>
+<LinearLayout
+       android:id="@+id/linear_null_wins"
+       android:layout_width="wrap_content"
+       android:layout_height="40dip"
+       android:orientation="horizontal"
+       android:layout_toRightOf="@+id/TicView" 
+       android:layout_above="@+id/imageButton1" >
+   <ImageView
+        android:id="@+id/image_null_wins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:src="@drawable/null_wins" />
+
+    <TextView
+        android:id="@+id/null_wins"
+        android:layout_width="32dip"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#FF993300"
+        android:textSize="24sp" />
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/black_bkg_box">
+    
+    <TextView
+        android:id="@+id/host_game_cap"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"   
+        android:background="#0066CC"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Join Game" />
+
+    
+    <TextView
+        android:id="@+id/join_game3_dev1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"  
+        android:background="#003300"
+        android:drawableRight="@drawable/img_null"
+        android:drawableEnd="@drawable/img_null"
+        android:drawablePadding="5dp"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="Device1 Name:" />
+   
+    
+    
+    <TextView
+        android:id="@+id/join_game3_dev2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_margin="5dp"  
+        android:background="#003300"
+        android:drawableRight="@drawable/img_null"
+        android:drawablePadding="5dp"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:text="Device2 Name:" />
+    
+  
+    <LinearLayout
+     	android:orientation="horizontal"
+     	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+
+     <Button
+		android:id="@+id/search"
+		android:text="Start"
+		android:textColor="#FFFFFF"
+		android:textSize="18sp"
+		android:layout_margin="20dp"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		
+		android:background="@drawable/mybutt_custom"
+		android:shadowColor="#666699"
+		android:shadowDx="1.0"
+		android:shadowDy="1.0"
+		android:onClick="StartGame"/>
+     <Button
+		android:id="@+id/cancel"
+		android:text="Cancel"
+		android:textColor="#FFFFFF"
+		android:textSize="18sp"
+		android:layout_margin="20dp"
+		android:layout_width="100dp"
+		android:layout_height="50dp"
+		
+		android:background="@drawable/mybutt_custom"
+		android:shadowColor="#666699"
+		android:shadowDx="1.0"
+		android:shadowDy="1.0"
+		android:onClick="Cancel"/>
+    </LinearLayout>
+    
+       
+  </LinearLayout>

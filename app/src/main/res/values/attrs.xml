@@ -1,0 +1,11 @@
+
+<resources>
+    <declare-styleable name="CustomTicView">
+      	<attr name="gridColor" format="color"/> 
+      	<attr name="borderColor" format="color"/>
+      	<attr name="fillColor" format="color"/>
+      	<attr name="crossColor" format="color"/>
+      	<attr name="nullColor" format="color"/>
+      	<attr name="winColor" format="color"/>
+    </declare-styleable>
+</resources>

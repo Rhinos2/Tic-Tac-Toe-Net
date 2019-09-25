@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_unit_id">ca-app-pub-7175411112323301/3276427675</string>
+    <string name="app_name">EntryPoint</string>
+    <string name="action_settings">Settings</string>
+    <string name="level_easy">EASY</string>
+    <string name="level_medium">MEDIUM</string>
+    <string name="level_hard">HARD</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+    <string name="title">tic-tac-toe</string>
+    <string name="turn">Turn:</string>
+	<string name="Xwins">wins:</string>
+	<string name="Owins">wins:</string>
+	<string name="title_land">tic-tac-toe tic-tac-toe</string>
+	
+	<string name="OpponDev_hint">Opponent</string>
+	
+	<string name="text_paired_devices">Paired Devices</string>
+	<string name="new_opponent_device">New Opponent Device Search</string>
+	<string name="old_opponent_device">Previously Played Opponents List</string>
+	<string name="make_device_visible">Ensure Visibility To Other Devices</string>
+	<string name="help">Help</string>
+	<!-- Bluetooth status info section messages -->
+	<string name="bluetooth_off">Bluetooth is currently turned off</string>
+	<string name="bluetooth_on">
+	    				 
+	    				 			BLUETOOTH CONNECTION INSTRUCTIONS \n\n
+	    						1.  The devices must be within the distance of 7 meters for
+	    						Bluetooth to reliably opperate. Either player can initiate the game
+	    						from this dialog. The other player should just click Proceed button.\n
+	    						2.  To connect to your opponents device select it from the list of
+	    						paired devices.\n
+	    						3.  If the device you want to play against is not in the list,
+	    						you have to inquire for devices first (Scan button) and accept
+	    						the request for pairing. Only paired Android deviced can connect
+	    						to each other.\n
+	    						4.  Your opponent device must be made discoverable (Make Visible button)
+	    						BEFORE you start scanning.
+	    								
+	    						</string>
+	
+	<string name="text_bt_status">BT Status</string>
+	<string name="enable_bluetooth">Enable Bluetooth</string>
+	<string name="allow_visible">Make Visible</string>
+	<string name="scan_for_devices">Scan For Devices</string>
+	<string name="intro_message">Tic-Tac-Toe BTW</string>
+</resources>
